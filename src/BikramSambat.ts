@@ -109,6 +109,18 @@ export default class BikramSambat {
             totalDays += bsDay - 4
         } else if (bsYear === 2088 && bsMonth > 5) {
             totalDays += bsDay - 4
+        } else if (bsYear === 2082) {
+            switch (bsMonth) {
+                case 2:
+                case 4:
+                case 7:
+                case 8:
+                case 10:
+                    totalDays += bsDay + 1
+                    break
+                default:
+                    totalDays += bsDay
+            }
         } else {
             totalDays += bsDay
         }
