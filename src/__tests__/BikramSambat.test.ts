@@ -1,7 +1,7 @@
 import { ADToBS, BSToAD } from ".."
 
 test("AD to BS conversion", () => {
-    expect(ADToBS("2025-07-17")).toBe("2082-04-01")
+    expect(ADToBS("2025-08-04")).toBe("2082-04-19")
 })
 
 test("BS to AD conversion", () => {
